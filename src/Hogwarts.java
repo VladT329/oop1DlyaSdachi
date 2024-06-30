@@ -5,20 +5,8 @@ public class Hogwarts {
                 new Ravenclaw("Padma Patil", 62, 51, 12, 63, 23, 32),
                 new Ravenclaw("Marcus Belby", 95, 64, 51, 23, 32, 41),
         };
-        System.out.println("number of students = " + ravenclawStudents.length);
-        for (int i = 0; i < ravenclawStudents.length; i++) {
-            Ravenclaw student = ravenclawStudents[i];
-            System.out.println("student " + (i+1) + " = " + student);
-        }
-
-        System.out.println("ravenclawStudents[1].sumSkillsRavenclaw() = " + ravenclawStudents[1].sumSkillsRavenclaw());
-        System.out.println("ravenclawStudents[2].sumSkillsRavenclaw() = " + ravenclawStudents[2].sumSkillsRavenclaw());
-        if (ravenclawStudents[1].sumSkillsRavenclaw()>ravenclawStudents[2].sumSkillsRavenclaw()){
-            System.out.println(ravenclawStudents[1].getName() + " сильнее " + ravenclawStudents[2].getName());
-        } else {
-            System.out.println(ravenclawStudents[2].getName() + " сильнее " + ravenclawStudents[1].getName());
-        }
-
+        Functions.showRavenclawInformation(ravenclawStudents);
+        Functions.compareRavenclawAbilities(ravenclawStudents[1],ravenclawStudents[2]);
         System.out.println();
 
         Griffindor griffindorStudents[] = {
@@ -26,20 +14,8 @@ public class Hogwarts {
                 new Griffindor("Hermione Granger", 90, 90, 90, 90, 90),
                 new Griffindor("Ron Weasley", 80, 80, 80, 80, 80),
         };
-        System.out.println("number of students = " + griffindorStudents.length);
-        for (int i = 0; i < griffindorStudents.length; i++) {
-            Griffindor student = griffindorStudents[i];
-            System.out.println("student " + (i+1) + " = " + student);
-        }
-
-        System.out.println("griffindorStudents[1].sumSkillsGriffindor() = " + griffindorStudents[1].sumSkillsGriffindor());
-        System.out.println("griffindorStudents[2].sumSkillsGriffindor() = " + griffindorStudents[2].sumSkillsGriffindor());
-        if (griffindorStudents[1].sumSkillsGriffindor()>griffindorStudents[2].sumSkillsGriffindor()){
-            System.out.println(griffindorStudents[1].getName() + " сильнее " + griffindorStudents[2].getName());
-        } else {
-            System.out.println(griffindorStudents[2].getName() + " сильнее " + griffindorStudents[1].getName());
-        }
-
+        Functions.showGriffindorInformation(griffindorStudents);
+        Functions.compareGriffindorAbilities(griffindorStudents[1], griffindorStudents[2]);
         System.out.println();
 
         Slytherin slytherinStudents[] = {
@@ -47,20 +23,8 @@ public class Hogwarts {
                 new Slytherin("Graham Montague", 80, 80, 80, 80, 80,80,80),
                 new Slytherin("Gregory Goyle", 70, 70, 70, 70, 70,70,70),
         };
-        System.out.println("number of students = " + slytherinStudents.length);
-        for (int i = 0; i < slytherinStudents.length; i++) {
-            Slytherin student = slytherinStudents[i];
-            System.out.println("student " + (i+1) + " = " + student);
-        }
-
-        System.out.println("slytherinStudents[1].sumSkillsSlytherin() = " + slytherinStudents[1].sumSkillsSlytherin());
-        System.out.println("slytherinStudents[2].sumSkillsSlytherin() = " + slytherinStudents[2].sumSkillsSlytherin());
-        if (slytherinStudents[1].sumSkillsSlytherin()>slytherinStudents[2].sumSkillsSlytherin()){
-            System.out.println(griffindorStudents[1].getName() + " сильнее " + slytherinStudents[2].getName());
-        } else {
-            System.out.println(slytherinStudents[2].getName() + " сильнее " + slytherinStudents[1].getName());
-        }
-
+        Functions.showSlytherinInformation(slytherinStudents);
+        Functions.compareSlytherinAbilities(slytherinStudents[1],slytherinStudents[2]);
         System.out.println();
 
 
@@ -69,28 +33,10 @@ public class Hogwarts {
                 new Hufflepuff("Cedric Diggory", 60, 60, 60, 60, 60),
                 new Hufflepuff("Justin Finch-Fletchley", 50, 50, 50, 50, 50),
         };
-        System.out.println("number of students = " + hufflepuffStudents.length);
-        for (int i = 0; i < hufflepuffStudents.length; i++) {
-            Hufflepuff student = hufflepuffStudents[i];
-            System.out.println("student " + (i+1) + " = " + student);
-        }
-
-        System.out.println("hufflepuffStudents[1].sumSkillsHufflepuff() = " + hufflepuffStudents[1].sumSkillsHufflepuff());
-        System.out.println("hufflepuffStudents[2].sumSkillsHufflepuff() = " + hufflepuffStudents[2].sumSkillsHufflepuff());
-        if (hufflepuffStudents[1].sumSkillsHufflepuff()>hufflepuffStudents[2].sumSkillsHufflepuff()){
-            System.out.println(hufflepuffStudents[1].getName() + " сильнее " + hufflepuffStudents[2].getName());
-        } else {
-            System.out.println(hufflepuffStudents[2].getName() + " сильнее " + hufflepuffStudents[1].getName());
-        }
-
+        Functions.showHufflepuffInformation(hufflepuffStudents);
+        Functions.compareHufflepuffAbilities(hufflepuffStudents[1],hufflepuffStudents[2]);
         System.out.println();
 
-        System.out.println("hufflepuffStudents[1].sumBasicSkills() = " + hufflepuffStudents[1].sumBasicSkills());
-        System.out.println("griffindorStudents[1].sumBasicSkills() = " + griffindorStudents[1].sumBasicSkills());
-        if (hufflepuffStudents[1].sumBasicSkills()>griffindorStudents[1].sumBasicSkills()){
-            System.out.println(hufflepuffStudents[1].getName() + " сильнее " + griffindorStudents[1].getName());
-        } else {
-            System.out.println(griffindorStudents[1].getName() + " сильнее " + hufflepuffStudents[1].getName());
-        }
+        Functions.compareBasicSkills(griffindorStudents[1], hufflepuffStudents[2]);
     }
 }

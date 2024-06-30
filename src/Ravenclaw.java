@@ -34,6 +34,14 @@ public class Ravenclaw extends BasicOptions {
         return creation;
     }
 
+    public String showStudentInformation() {
+        return "Имя = " + getName() + " сила магии = " + getMagicPower() + " расстояние трансгрессии = " + getTransgressionRage() +
+                " находчивость=" + smart +
+                ", мудрость=" + wisdom +
+                ", устроумие=" + wit +
+                ", креативность=" + creation;
+    }
+
     @Override
     public String toString() {
         return "Ravenclaw{" + "Name = " + getName() + " magic power = " + getMagicPower() + " transgression range = " + getTransgressionRage() +

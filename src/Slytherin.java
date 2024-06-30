@@ -40,6 +40,15 @@ public class Slytherin extends BasicOptions {
         return lustForPower;
     }
 
+    public String showStudentInformation() {
+        return "Имя = " + getName() + " сила магии = " + getMagicPower() + " расстояние трансгрессии = " + getTransgressionRage() +
+                " хитрость=" + cunning +
+                ", решительность=" + determination +
+                ", целеутремленность=" + ambition +
+                ", находчивость=" + resourcefulness +
+                ", жажда власти=" + lustForPower;
+    }
+
     @Override
     public String toString() {
         return "Slytherin{" + "Name = " + getName() + " magic power = " + getMagicPower() + " transgression range = " + getTransgressionRage() +

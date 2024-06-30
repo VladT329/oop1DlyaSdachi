@@ -28,6 +28,13 @@ public class Hufflepuff extends BasicOptions {
         return honest;
     }
 
+    public String showStudentInformation() {
+        return "Имя = " + getName() + " сила магии = " + getMagicPower() + " сила трансгрессии = " + getTransgressionRage() +
+                " трудолюбие=" + hardworking +
+                ", верность=" + loyalty +
+                ", честь=" + honest;
+    }
+
     @Override
     public String toString() {
         return "Hufflepuff{" + "Name = " + getName() + " magic power = " + getMagicPower() + " transgression range = " + getTransgressionRage() +

@@ -28,6 +28,13 @@ public class Griffindor extends BasicOptions {
         return brave;
     }
 
+    public String showStudentInformation(){
+        return "Имя = " + getName() + " сила магии = " + getMagicPower() + " дальность трансгрессии = " + getTransgressionRage() +
+                " благородство=" + nobility +
+                ", честь=" + honor +
+                ", храбрость=" + brave;
+    }
+
     @Override
     public String toString() {
         return "Griffindor{" + "Name = " + getName() + " magic power = " + getMagicPower() + " transgression range = " + getTransgressionRage() +
